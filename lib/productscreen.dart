@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grid_view_task2/api.dart';
-//import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 
 
@@ -50,18 +50,18 @@ class ProductScreen extends StatelessWidget {
             color: Colors.grey[600],
           ),
         ),
-        //const SizedBox(height: 5,),
-        /*RatingBarIndicator(
+        const SizedBox(height: 5,),
+        RatingBarIndicator(
           itemBuilder: (context, ind) =>
               const Icon(
                 Icons.star,
                 color: Colors.amber,
                 ),
-                rating: DataSource.listOfProduct[index].productRating.toDouble(),  //here
+                rating: product.productRating.toDouble(),  //here
                 itemCount: 5,
                 itemSize: 15,
                 direction: Axis.horizontal,
-                ),*/
+                ),
         const SizedBox(height: 300),
         Padding(
           padding: const EdgeInsets.fromLTRB(0.0,0.0,20.0,0.0),
